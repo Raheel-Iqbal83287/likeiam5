@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Explain It Simply',
+  title: 'Like I Am 5 : Explain things simply!',
   description: 'Instantly simplify complex text into explanations a 5-year-old could understand.',
 };
 

@@ -15,8 +15,8 @@ import { simplifyText } from "@/ai/flows/simplify-text";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const formSchema = z.object({
-  complexText: z.string().min(10, {
-    message: "Please enter at least 10 characters to simplify.",
+  complexText: z.string().min(2, {
+    message: "Please enter at least 2 characters to simplify.",
   }).max(2000, {
     message: "Text cannot be longer than 2000 characters.",
   }),
@@ -79,7 +79,7 @@ export function SimplifyForm() {
                   <FormItem>
                     <FormControl>
                       <Textarea
-                        placeholder="e.g., 'Photosynthesis is the process used by plants, algae, and certain bacteria to harness energy from sunlight and turn it into chemical energy.'"
+                        placeholder="Enter a term to simplify it!"
                         className="min-h-[150px] resize-none text-base rounded-lg bg-background/50 border-border focus-visible:ring-primary/80"
                         {...field}
                       />
